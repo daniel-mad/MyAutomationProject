@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-17T23:07:34 IDT" name="Default suite" finished-at="2020-10-17T23:08:21 IDT" duration-ms="47141">
+    <groups>
+    </groups>
+    <test started-at="2020-10-17T23:07:34 IDT" name="Default test" finished-at="2020-10-17T23:08:21 IDT" duration-ms="47141">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:34 IDT" name="setup" finished-at="2020-10-17T23:07:41 IDT" duration-ms="7291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tc01_login()[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:41 IDT" name="tc01_login" description="Login with valid user name and password" finished-at="2020-10-17T23:07:48 IDT" duration-ms="6971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_login -->
+        <test-method signature="tc02_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:48 IDT" name="tc02_login" description="Login with valid email and wrong password - using DDT" data-provider="getData" finished-at="2020-10-17T23:07:52 IDT" duration-ms="3141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[daniel@daniel.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[45e33]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_login -->
+        <test-method signature="tc02_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:52 IDT" name="tc02_login" description="Login with valid email and wrong password - using DDT" data-provider="getData" finished-at="2020-10-17T23:07:54 IDT" duration-ms="2931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[daniel@daniel.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[65ttg43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_login -->
+        <test-method signature="tc02_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:54 IDT" name="tc02_login" description="Login with valid email and wrong password - using DDT" data-provider="getData" finished-at="2020-10-17T23:07:57 IDT" duration-ms="2659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[daniel@daniel.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9hhh99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_login -->
+        <test-method signature="tc03_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:07:58 IDT" name="tc03_login" description="Login with wrong email and wrong password - using excel" data-provider="getDataFromExcel" finished-at="2020-10-17T23:08:02 IDT" duration-ms="4613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[102030]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_login -->
+        <test-method signature="tc03_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:02 IDT" name="tc03_login" description="Login with wrong email and wrong password - using excel" data-provider="getDataFromExcel" finished-at="2020-10-17T23:08:06 IDT" duration-ms="3437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gfgfgggfgdd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9876t2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_login -->
+        <test-method signature="tc03_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:06 IDT" name="tc03_login" description="Login with wrong email and wrong password - using excel" data-provider="getDataFromExcel" finished-at="2020-10-17T23:08:10 IDT" duration-ms="4258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7875765gg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_login -->
+        <test-method signature="tc03_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:10 IDT" name="tc03_login" description="Login with wrong email and wrong password - using excel" data-provider="getDataFromExcel" finished-at="2020-10-17T23:08:13 IDT" duration-ms="3590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abvcfgh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8729293]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_login -->
+        <test-method signature="tc03_login(java.lang.String, java.lang.String)[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:13 IDT" name="tc03_login" description="Login with wrong email and wrong password - using excel" data-provider="getDataFromExcel" finished-at="2020-10-17T23:08:18 IDT" duration-ms="4129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[daniel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[36363636]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_login -->
+        <test-method signature="tc04_login()[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:18 IDT" name="tc04_login" description="Login with no email and no password" finished-at="2020-10-17T23:08:21 IDT" duration-ms="3542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@60704c]" started-at="2020-10-17T23:08:21 IDT" name="tearDown" finished-at="2020-10-17T23:08:21 IDT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
