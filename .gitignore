@@ -18,4 +18,4 @@ target/
 Test-output/
 
 #TestNG
-Testing.xml
+testng.xml
