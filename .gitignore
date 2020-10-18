@@ -16,3 +16,6 @@ log/
 target/
 
 Test-output/
+
+#TestNG
+Testing.xml
