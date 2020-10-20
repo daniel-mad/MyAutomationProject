@@ -5,6 +5,8 @@
 		<listener class-name="utils.ListenerClass"></listener>
 	</listeners>
 	<test name="Test">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="baseUrl" value="http://automationpractice.com/index.php" />
 		<classes>
 			<class name="tests.CreateAccountTest" />
 			<class name="tests.CheckoutPaymentsTest" />

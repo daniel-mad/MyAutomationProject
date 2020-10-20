@@ -19,7 +19,7 @@ public class CreateAccountTest extends BaseTest {
 	public void tc01_createAccount() {
 		LoginPage lp = new LoginPage(driver);
 		lp.clickSignIn();
-		lp.createAnAccount("daniel@daniel5558.com");
+		lp.createAnAccount("daniel@daniel55589.com");
 		CreateAccountPage cap = new CreateAccountPage(driver);
 		cap.createMaleAcct("Daniel", "Madhala", "daniel@daniel5558.com", "12345", "03/06/1987", "My Company", "Address",
 				"New City", "Alabama", "00000", "050987654", "My Home");
