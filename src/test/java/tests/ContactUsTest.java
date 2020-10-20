@@ -1,17 +1,16 @@
 package tests;
 
 import org.testng.Assert;
-//import org.testng.Assert;
 import org.testng.annotations.Test;
-
-
 import pageobjects.ContactUsPage;
 import pageobjects.LoginPage;
+import io.qameta.allure.*;
 
+@Epic("Contact Us")
+@Feature("Contact Us")
 public class ContactUsTest extends BaseTest{
-	
-
-	
+	@Description("Verified Contact Us")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Send a customer service message with valid information")
 	public void tc01_sendMessage() {
 		LoginPage lp = new LoginPage(driver);
@@ -23,6 +22,8 @@ public class ContactUsTest extends BaseTest{
 		Assert.assertEquals(expected, actual);
 		
 	}
+	@Description("Verified Contact Us")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Send a webmaster message with valid information")
 	public void tc02_sendMessage() {
 		LoginPage lp = new LoginPage(driver);
@@ -34,6 +35,8 @@ public class ContactUsTest extends BaseTest{
 		Assert.assertEquals(expected, actual);
 		
 	}
+	@Description("Verified Contact Us")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Send a message with no subject")
 	public void tc03_sendMessage() {
 		LoginPage lp = new LoginPage(driver);
@@ -45,6 +48,8 @@ public class ContactUsTest extends BaseTest{
 		Assert.assertEquals(expected, actual);
 		
 	}
+	@Description("Verified Contact Us")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Send a message with no email")
 	public void tc04_sendMessage() {
 		LoginPage lp = new LoginPage(driver);
@@ -56,6 +61,8 @@ public class ContactUsTest extends BaseTest{
 		Assert.assertEquals(expected, actual);
 		
 	}
+	@Description("Verified Contact Us")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Send a message with no message")
 	public void tc05_sendMessage() {
 		LoginPage lp = new LoginPage(driver);

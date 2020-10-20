@@ -8,6 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import io.qameta.allure.Step;
+import utils.AllureAttachment;
+
 
 
 public class LoginPage extends BasePage {
@@ -97,10 +100,11 @@ public class LoginPage extends BasePage {
 		fillText(createEmailAddessField, email);
 		click(submitCreateBtn);
 	}
-	
+	@Step ("Login with user: {0}  password: {1}")
 	public void signIn(String email, String password) {
 		fillText(emailField, email);
 		fillText(passwordField, password);
+		AllureAttachment.attachElementScreenshot(signInBtn);
 		click(signInBtn);
 	}
 	public void searchItem(String item) {
@@ -122,6 +126,7 @@ public class LoginPage extends BasePage {
 			break;
 		}
 	}
+	@Step ("Add to cart : {0}")
 	public void addToCart(String item) {
 		searchItem(item);
 		List<WebElement> list =driver.findElements(By.cssSelector(".ajax_block_product")) ;

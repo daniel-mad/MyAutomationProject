@@ -2,10 +2,15 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import pageobjects.LoginPage;
+import io.qameta.allure.*;
+
+@Epic("Search")
+@Feature("Searching Angine")
 
 public class SearchTest extends BaseTest {
+	@Description("Verified Searching")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Search an item that existed")
 	public void tc01_searchTest(){
 		LoginPage lp = new LoginPage(driver);
@@ -17,6 +22,8 @@ public class SearchTest extends BaseTest {
 		}
 		
 	}
+	@Description("Verified Searching")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Search an item that not exists")
 	public void tc02_searchTest(){
 		LoginPage lp = new LoginPage(driver);
@@ -29,6 +36,8 @@ public class SearchTest extends BaseTest {
 		}
 		
 	}
+	@Description("Verified Searching")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Search an item by clicking Women category")
 	public void tc03_searchTest() {
 		LoginPage lp = new LoginPage(driver);
@@ -37,6 +46,8 @@ public class SearchTest extends BaseTest {
 		String expected = "Women";
 		Assert.assertEquals(actual, expected);
 	}
+	@Description("Verified Searching")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Search an item by clicking Dresses category")
 	public void tc04_searchTest() {
 		LoginPage lp = new LoginPage(driver);
@@ -45,6 +56,8 @@ public class SearchTest extends BaseTest {
 		String expected = "Dresses";
 		Assert.assertEquals(actual, expected);
 	}
+	@Description("Verified Searching")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Search an item by clicking T-shirts category")
 	public void tc05_searchTest() {
 		LoginPage lp = new LoginPage(driver);

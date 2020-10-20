@@ -3,11 +3,17 @@ package tests;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pageobjects.LoginPage;
+import io.qameta.allure.*;
 
+@Epic("Payment")
+@Feature("Checkout and pay")
 public class CheckoutPaymentsTest extends BaseTest{
+	@Description("Verified Procced to checkout")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Proceed to checkout payment by Bank-wire")
 	public void tc01_checkoutPay() {
 		LoginPage lp = new LoginPage(driver);
@@ -23,6 +29,8 @@ public class CheckoutPaymentsTest extends BaseTest{
 		lp.logOut();
 			
 	}
+	@Description("Verified Procced to checkout")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Proceed to checkout payment by Check")
 	public void tc02_checkoutPay() {
 		LoginPage lp = new LoginPage(driver);
@@ -38,6 +46,8 @@ public class CheckoutPaymentsTest extends BaseTest{
 		lp.logOut();
 			
 	}
+	@Description("Verified Procced to checkout")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Proceed to checkout without agree to terms of service")
 	public void tc03_checkoutPay() {
 		LoginPage lp = new LoginPage(driver);

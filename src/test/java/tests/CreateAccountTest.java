@@ -7,8 +7,14 @@ import org.testng.annotations.Test;
 import pageobjects.CreateAccountPage;
 import pageobjects.LoginPage;
 import pageobjects.MyAccountPage;
+import io.qameta.allure.*;
+
+@Epic("Account")
+@Feature("Create Account")
 
 public class CreateAccountTest extends BaseTest {
+	@Description("Verified Create an Account")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Create an account with valid information")
 	public void tc01_createAccount() {
 		LoginPage lp = new LoginPage(driver);
@@ -23,7 +29,8 @@ public class CreateAccountTest extends BaseTest {
 		Assert.assertEquals(expected, actual);
 
 	}
-	
+	@Description("Verified Create an Account")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Create an acount with wrong information")
 	public void tc02_createAccount() {
 		LoginPage lp = new LoginPage(driver);
@@ -38,9 +45,8 @@ public class CreateAccountTest extends BaseTest {
 		Assert.assertEquals(expected, actual);
 
 	}
-	
-	
-
+	@Description("Verified Create an Account")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(description = "Create an account using existing email")
 	public void tc03_createAccount() {
 		LoginPage lp = new LoginPage(driver);
